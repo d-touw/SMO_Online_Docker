@@ -25,3 +25,7 @@ The container will be ran in the background and you will not get into the consol
 `$ docker attach smo_online_docker_server_1 --detach-keys ctrl-x`
 
 Note that the option `--detach-keys` is added, this is to make sure we can escape the container without killing the server.
+
+If you want to shutdown the container run the following command:
+
+` $ docker-compose down`
