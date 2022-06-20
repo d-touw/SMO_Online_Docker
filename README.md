@@ -6,7 +6,9 @@ The SMO Online server can be found [here](https://github.com/Sanae6/SmoOnlineSer
 ## Requirements
 Make sure you have docker.io and docker-compose installed.
 Also add your user to the docker group to run it without sudo:
-`sudo usermod -aG docker $USER`
+
+`$ sudo usermod -aG docker $USER`
+
 And relog your console/ssh session to get the group permission.
 
 ## Some info
@@ -19,5 +21,7 @@ To run the server use the following command:
 `$ docker-compose up -d`
 
 The container will be ran in the background and you will not get into the console with this command. This is intended to keep the server running. To get into the console of the server run the folllowing command:
+
 `$ docker attach smo_online_docker_server_1 --detach-keys ctrl-x`
+
 Note that the option `--detach-keys` is added, this is to make sure we can escape the container without killing the server.
