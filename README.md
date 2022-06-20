@@ -16,7 +16,7 @@ To keep the server configurable I opted to use docker-compose. This way you can 
 
 ## Running the environment
 Clone the repo and cd into the directory.
-To start, run start.sh, either `$ ./start.sh` or `$ bash start.sh`. This will download the appropriate file for your environment, either AMD64 or ARM/ARM64.
+To start, run start.sh, `$ bash start.sh`. This will download the appropriate file for your environment, either AMD64 or ARM/ARM64.
 
 To run the server use the following command:
 `$ docker-compose up -d`
@@ -30,3 +30,6 @@ Note that the option `--detach-keys` is added, this is to make sure we can escap
 If you want to shutdown the container run the following command:
 
 ` $ docker-compose down`
+
+## To update the server?
+Just run the `bash start.sh` command again, it will download the new config for the server.
