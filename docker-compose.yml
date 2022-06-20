@@ -4,8 +4,6 @@ services:
   server:
     build:
       context: .
-    stdin_open: true
-    tty: true 
     command: ["/bin/bash", "-l", "-c", "/root/Server"]
     volumes:
         - ./container-files:/root
