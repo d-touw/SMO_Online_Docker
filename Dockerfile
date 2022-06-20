@@ -7,7 +7,7 @@ RUN apt install wget libicu-dev -y
 
 # Workdir to place the binary, wget to download the latest server. and to make it executable
 WORKDIR /root
-RUN wget https://github.com/Sanae6/SmoOnlineServer/releases/latest/download/Server
+#RUN wget https://github.com/Sanae6/SmoOnlineServer/releases/latest/download/$file
 RUN chmod +x Server
 
 # '*' for if file exists. May also not be required.
