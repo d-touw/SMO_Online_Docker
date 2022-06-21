@@ -19,6 +19,8 @@ And relog your console/ssh session to get the group permission.
 ## Some info
 To keep the server configurable I opted to use docker-compose. This way you can edit `settings.json` in `container-files` and reload the config if you want too within the server, it also makes lets you keep your settings as the coutainer-files directory is mounted in the container.
 
+If you wish to edit to port, make sure you change the port in `settings.json` in `container-files` but also in `docker-compose.yml`, as that is the file which specifies which ports to open.
+
 ## Running the environment
 Clone the repo and cd into the directory.
 To start, run start.sh, `$ bash start.sh`. This will download the appropriate file for your environment, either AMD64 or ARM/ARM64.
