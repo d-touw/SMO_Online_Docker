@@ -5,7 +5,9 @@ The SMO Online server can be found [here](https://github.com/Sanae6/SmoOnlineSer
 
 ## Requirements
 Make sure you have docker, docker.io and docker-compose installed, ie:
+
 `$ sudo apt install docker docker.io docker-compose -y`
+
 Or your distro's equivalent.
 
 Also add your user to the docker group to run it without sudo:
