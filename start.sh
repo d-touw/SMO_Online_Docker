@@ -4,7 +4,7 @@
 arch=$(dpkg --print-architecture)
 if [[ $arch == x86_64* || $arch == amd64 ]]; then
     file="Server"
-elif  [[ $arch == armf ]]; then
+elif  [[ $arch == armhf ]]; then
     file="Server.arm"
 elif  [[ $arch == arm64 ]]; then
     file="Server.arm64"
