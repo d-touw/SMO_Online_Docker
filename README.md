@@ -1,5 +1,5 @@
 # SMO_Online_Docker
-This is an easy setup to host a SMO Online server in a docker container for Linux environments.
+This is an easy setup to host a SMO Online server in a docker container for Linux environments, including WSL2.
 The SMO Online mod can be found [here](https://github.com/CraftyBoss/SuperMarioOdysseyOnline).
 The SMO Online server can be found [here](https://github.com/Sanae6/SmoOnlineServer).
 
