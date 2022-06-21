@@ -2,7 +2,7 @@
 
 # Check for architecture, this only works on linux, not on mac.
 arch=$(dpkg --print-architecture)
-if [[ $arch == x86_64* || amd64 ]]; then
+if [[ $arch == x86_64* || $arch == amd64 ]]; then
     file="Server"
 elif  [[ $arch == armf ]]; then
     file="Server.arm"
