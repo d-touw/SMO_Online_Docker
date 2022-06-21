@@ -27,9 +27,9 @@ The container will be ran in the background and you will not get into the consol
 
 The escape sequence for the container will be by default `ctrl+p+q`. But in some shells, powershell and linux ssh, there is another option:
 
-`$ docker attach smo_online_docker_server_1 --detach-keys ctrl-x`
+`$ docker attach smo_online_docker_server_1 --sig-proxy=false`
 
-Note that the option `--detach-keys` is added, insted of pressing `ctrl+p+q` we can detach from the container by pressing `ctrl+x`.
+Note that the option `--sig-proxy=false` is added, insted of pressing `ctrl+p+q` we can detach from the container by pressing `ctrl+c`.
 
 If you want to shutdown the container run the following command:
 

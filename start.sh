@@ -16,22 +16,15 @@ then
     rm container-files/Server
 fi
 
-# Wget to download the correct file and to set permissions.
+# wget to download the correct file and to set permissions.
 wget https://github.com/Sanae6/SmoOnlineServer/releases/latest/download/$file -O Server
 chmod +x Server
 
 # check if file exists in container-filed dir
-if [ -f docker-compose/container-files/Server ]
+if [ -f container-files/Server ]
 then
-    rm docker-compose/container-files/Server
+    rm container-files/Server
 fi
 
-# check if file exists in container-filed dir
-if [ -f dockerfile/Server ]
-then
-    rm dockerfile/Server
-fi
-
-#finally move the server file.
-cp Server docker-compose/container-files/Server
-mv Server dockerfile/Server
+# finally move the server file.
+mv Server container-files/Server

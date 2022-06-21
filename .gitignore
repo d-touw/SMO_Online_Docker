@@ -1,8 +1,2 @@
-
-container-files/Server
-
-docker-compose/container-files/Server
-
-dockerfile/Server
-
-docker-file/Server
+*Server*
+*server*
