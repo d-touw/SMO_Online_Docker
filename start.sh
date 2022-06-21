@@ -4,7 +4,7 @@
 arch=$(dpkg --print-architecture)
 if [[ $arch == x86_64* || amd64 ]]; then
     file="Server"
-elif  [[ $arch == arm ]]; then
+elif  [[ $arch == armf ]]; then
     file="Server.arm"
 elif  [[ $arch == arm64 ]]; then
     file="Server.arm64"
@@ -21,10 +21,17 @@ wget https://github.com/Sanae6/SmoOnlineServer/releases/latest/download/$file -O
 chmod +x Server
 
 # check if file exists in container-filed dir
-if [ -f container-files/Server ]
+if [ -f docker-compose/container-files/Server ]
 then
-    rm container-files/Server
+    rm docker-compose/container-files/Server
+fi
+
+# check if file exists in container-filed dir
+if [ -f dockerfile/Server ]
+then
+    rm dockerfile/Server
 fi
 
 #finally move the server file.
-mv Server container-files/Server
+cp Server docker-compose/container-files/Server
+mv Server dockerfile/Server

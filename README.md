@@ -23,9 +23,13 @@ To run the server use the following command:
 
 The container will be ran in the background and you will not get into the console with this command. This is intended to keep the server running. To get into the console of the server run the folllowing command:
 
+`$ docker attach smo_online_docker_server_1`
+
+The escape sequence for the container will be by default `ctrl+p+q`. But in some shells, powershell and linux ssh, there is another option:
+
 `$ docker attach smo_online_docker_server_1 --detach-keys ctrl-x`
 
-Note that the option `--detach-keys` is added, this is to make sure we can escape the container without killing the server.
+Note that the option `--detach-keys` is added, insted of pressing `ctrl+p+q` we can detach from the container by pressing `ctrl+x`.
 
 If you want to shutdown the container run the following command:
 

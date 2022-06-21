@@ -1,0 +1,25 @@
+{
+  "Server": {
+    "Address": "0.0.0.0",
+    "Port": 1027,
+    "MaxPlayers": 8
+  },
+  "Flip": {
+    "Enabled": true,
+    "Players": [],
+    "Pov": "both"
+  },
+  "Scenario": {
+    "MergeEnabled": false
+  },
+  "BanList": {
+    "Enabled": false,
+    "Players": [],
+    "IpAddresses": []
+  },
+  "Discord": {
+    "Token": null,
+    "Prefix": "$",
+    "LogChannel": null
+  }
+}
