@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Check for architecture, this only works on linux, not on mac.
+# Check for architecture, this only works on linux, not on MacOS.
 arch=$(dpkg --print-architecture)
 if [[ $arch == x86_64* || $arch == amd64 ]]; then
     file="Server"
