@@ -3,6 +3,18 @@ This is an easy setup to host a SMO Online server in a docker container for Linu
 The SMO Online mod can be found [here](https://github.com/CraftyBoss/SuperMarioOdysseyOnline).
 The SMO Online server can be found [here](https://github.com/Sanae6/SmoOnlineServer).
 
+## Some info
+To keep the server configurable I opted to use docker-compose. This way you can edit `settings.json` in `container-files` and reload the config if you want too within the server, it also makes lets you keep your settings as the coutainer-files directory is mounted in the container.
+
+If you wish to edit to port, make sure you change the port in `settings.json` in `container-files` but also in `docker-compose.yml`, as that is the file which specifies which ports to open.
+
+There is also a dockerhub [image](https://hub.docker.com/repository/docker/dasteen25/smo_online_server) available. Pull it with:
+
+` $ docker pull dasteen25/smo_online_server`
+
+Note: This image is not automatically updated when a new build of the SMO server binaries is released.
+
+
 ## Requirements
 Make sure you have docker, docker.io and docker-compose installed, ie:
 
@@ -16,10 +28,6 @@ Also add your user to the docker group to run it without sudo:
 
 And relog your console/ssh session to get the group permission.
 
-## Some info
-To keep the server configurable I opted to use docker-compose. This way you can edit `settings.json` in `container-files` and reload the config if you want too within the server, it also makes lets you keep your settings as the coutainer-files directory is mounted in the container.
-
-If you wish to edit to port, make sure you change the port in `settings.json` in `container-files` but also in `docker-compose.yml`, as that is the file which specifies which ports to open.
 
 ## Running the environment
 Clone the repo and cd into the directory.
