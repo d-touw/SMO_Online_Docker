@@ -8,7 +8,7 @@ To keep the server configurable I opted to use docker-compose. This way you can 
 
 If you wish to edit to port, make sure you change the port in `settings.json` in `container-files` but also in `docker-compose.yml`, as that is the file which specifies which ports to open.
 
-There is also a dockerhub [image](https://hub.docker.com/repository/docker/dasteen25/smo_online_server) available, it will work on ARM, ARM64 and AMD64, did build it for multiple platforms. Pull it with:
+There is also a dockerhub [image](https://hub.docker.com/repository/docker/dasteen25/smo_online_server) available, it will work on ARM, ARM64 and AMD64, as I did build it for multiple platforms with just one image. Pull it with:
 
 ` $ docker pull dasteen25/smo_online_server`
 
